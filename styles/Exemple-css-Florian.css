@@ -1,0 +1,17 @@
+body {
+  background-color: #e0a4a4;
+}
+
+.item-gallery {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  background-color: #decd90;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
