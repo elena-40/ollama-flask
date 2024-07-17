@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
   </head>
 
   <body>
     <div class="header">
-      <img src="images/ida-logo1.png" alt="Ida design for kids logo" class="logo">
+      <img src="./static/images/ida-logo1.png" alt="" class="logo">
       <h1>Ida Design is Cool</h1>
       <p class="subtitle"> ~ creative patterns for kids ~ </p>
     </div>
@@ -16,13 +16,12 @@
     <h2> Products </h2>
     <div class="gallery">
         <div class="item-gallery">
-          <img src="images/lion.png" alt="Ida design for kids">
-          
+          <img src="" alt="">
           <p>design for labeles</p>
         </div>
         <div class="item-gallery">
           
-          <img src="images/ida-design1.png" alt="Ida design for kids ">
+          <img src="" alt="">
           <p>design for books</p>
         </div>
         <div class="item-gallery">
@@ -47,7 +46,9 @@
 
     <p>Inspired by kids, created with love – discover Ida Design.</p>
 
-    <p>Read the <a href="https://www.canva.com/design/DAGLAHihku4/LN3w0AENciJQhPmMbtOlxw/edit?utm_content=DA[…]m_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Ida design </a> 
-      to learn even more about the values and principles that guide the pursuit of our mission.</p>
-  </body>
+    <a href= "{{ url_for('gallery') }}" class="button"> click here </a>
+      
+  
+  
+    </body>
 </html>
